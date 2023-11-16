@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'angularapp';
   employeeName:'John Doe';
 
-  isPresent=false;
+  isPresent=true;
   onToggleAttendance(){
     this.isPresent=!this.isPresent;
     
