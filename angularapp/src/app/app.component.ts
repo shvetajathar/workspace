@@ -19,6 +19,6 @@ export class AppComponent {
 
   isSpecial=true;
 
-  textColor='blue';
+  textColor='red';
   employeeStatus='';
 }
