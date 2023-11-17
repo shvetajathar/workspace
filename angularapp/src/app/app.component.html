@@ -1,9 +1,18 @@
-<h2>Employee Attendance</h2>
+<table class="table">
+  <thead>
+<tr style="background-color: blue;" align="center">
+  Employee Attendance
+</tr>
+</thead>
+<tbody>
+
+ <tr>
+  Employee Name: {{employeeName}}
+ </tr>
  
+
  
-<p>Employee Name: {{employeeName}}</p>
- 
-<p>Employee Status: {{isPresent? 'Present' : 'Absent'}}</p>
+<tr>Employee Status: {{isPresent? 'Present' : 'Absent'}}</tr>
 <button (click)="onToggleAttendance()">Toggle Attendance:</button>
 <br>
 <img [src]="imageUrl" alt="Employee Image:"/>
@@ -19,3 +28,5 @@
  
 <input [(ngModel)]="employeeStatus" placeholder="Employee Status"/>
 <p>Employee Status: {{employeeStatus}}</p>
+</tbody>
+</table>
