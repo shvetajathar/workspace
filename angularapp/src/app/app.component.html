@@ -21,9 +21,15 @@
 <td>Toggle Attendance:</td>
 <button (click)="onToggleAttendance()">Mark Absent</button>
 <br>
+
+<tr>
+  <td>Employee Image:</td>
+  <img [src]="imageUrl" alt="Employee Image"/>
+</tr>
 <tr>
 <td>Colspan Attribute:</td>
-<td><table border="1">
+<td>
+  <table border="1">
   <tr>
     <td [attr.colspan]="colSpan"></td>
   </tr>
@@ -31,17 +37,21 @@
 </td>
 </tr>
 <tr>
-  <img [src]="imageUrl" alt="Employee Image"/>
+<td>Special Class:</td>
+<div [class.special]="isSpecial" style="background-color: yellow; ">This is a special div.</div>
+ 
 </tr>
 
-
-<div [class.special]="isSpecial">This is a special div.</div>
- <tr>
+<tr>
   <td>Custom Color:</td>
   <p [style.color]="textColor">This text has custom color.</p>
  </tr>
-<input [(ngModel)]="employeeStatus" placeholder="Employee Status"/>
-<p>Employee Status: {{employeeStatus}}</p>
+ <tr>
+   <td>Two-Way Binding:</td>
+   <input [(ngModel)]="employeeStatus" placeholder="Employee Status"/>&nbsp;&nbsp;&nbsp;
+   
+  <td>Employee Status: {{employeeStatus}}</td>
+</tr>
 </tbody>
 
 </table>
