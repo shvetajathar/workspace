@@ -1,8 +1,8 @@
 <h2>Employee Attendance</h2>
-
-
+ 
+ 
 <p>Employee Name: {{employeeName}}</p>
-
+ 
 <p>Employee Status: {{isPresent? 'Present' : 'Absent'}}</p>
 <button (click)="onToggleAttendance()">Toggle Attendance:</button>
 <br>
@@ -12,10 +12,10 @@
     <td [attr.colspan]="colSpan"></td>
   </tr>
 </table>
-
+ 
 <div [class.special]="isSpecial">This is a special div.</div>
-
+ 
 <p [style.color]="textColor">Custom Color:This text has custom color.</p>
-
+ 
 <input [(ngModel)]="employeeStatus" placeholder="Employee Status"/>
-<p>Employee Status: {{employeeStatus}}/p>
+<p>Employee Status: {{employeeStatus}}</p>
