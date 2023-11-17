@@ -14,11 +14,11 @@ export class AppComponent {
     this.isPresent=!this.isPresent;
    
   }
-  imageUrl='path/to/employee-image.jpg';
+  imageUrl='https://test-image-url.com/johndoe.jpg';
   colSpan=2;
  
   isSpecial=true;
  
-  textColor='blue';
+  textColor='red';
   employeeStatus='';
 }
