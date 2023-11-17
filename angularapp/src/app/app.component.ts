@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'angularapp';
-  employeeName='John Doe';
+  employeeName:string='John Doe';
 
-  isPresent=true;
+  isPresent:boolean=true;
   onToggleAttendance(){
     this.isPresent=!this.isPresent;
     
