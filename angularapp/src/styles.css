@@ -2,3 +2,6 @@
 /* .special{
     background-color: yellow;
 } */
+thead tr{
+    text-align: center;
+}

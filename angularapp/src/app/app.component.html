@@ -1,11 +1,14 @@
-<div class="jumbotron">
-<table >
+<div class="container jumbotron">
+<table class="table">
   <thead>
  
-    <tr style="background-color: blue;" align="center">Employee Attendance</tr>
+    <tr style="background-color: blue;" align="center">
+      <td colspan="2">Employee Data</td>
+    </tr>
     
   
 </thead>
+
 <tbody>
  <tr>
   <td>Employee Name:</td>
@@ -15,17 +18,23 @@
   <td>Employee Status: </td>
   <td>{{isPresent? 'Present' : 'Absent'}}</td>
 </tr>
-<button (click)="onToggleAttendance()">Toggle Attendance:</button>
+<td>Toggle Attendance:</td>
+<button (click)="onToggleAttendance()">Mark Absent</button>
 <br>
 <tr>
-  <img [src]="imageUrl" alt="Employee Image"/>
-</tr>
-
-<table border="1">
+<td>Colspan Attribute:</td>
+<td><table border="1">
   <tr>
     <td [attr.colspan]="colSpan"></td>
   </tr>
 </table>
+</td>
+</tr>
+<tr>
+  <img [src]="imageUrl" alt="Employee Image"/>
+</tr>
+
+
 <div [class.special]="isSpecial">This is a special div.</div>
  <tr>
   <td>Custom Color:</td>
@@ -34,5 +43,6 @@
 <input [(ngModel)]="employeeStatus" placeholder="Employee Status"/>
 <p>Employee Status: {{employeeStatus}}</p>
 </tbody>
+
 </table>
 </div>
