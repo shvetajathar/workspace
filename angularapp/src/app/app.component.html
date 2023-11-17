@@ -1,8 +1,8 @@
-<!-- <div class="container jumbotron"> -->
+<div class="jumbotron">
 <table >
   <thead>
  
-    <th style="background-color: blue;" align="center">Employee Attendance</th>
+    <tr style="background-color: blue;" align="center">Employee Attendance</tr>
     
   
 </thead>
@@ -17,8 +17,10 @@
 </tr>
 <button (click)="onToggleAttendance()">Toggle Attendance:</button>
 <br>
-<tr></tr>
-<img [src]="imageUrl" alt="Employee Image"/>
+<tr>
+  <img [src]="imageUrl" alt="Employee Image"/>
+</tr>
+
 <table border="1">
   <tr>
     <td [attr.colspan]="colSpan"></td>
@@ -33,4 +35,4 @@
 <p>Employee Status: {{employeeStatus}}</p>
 </tbody>
 </table>
-<!-- </div> -->
+</div>
